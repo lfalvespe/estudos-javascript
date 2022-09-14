@@ -2,4 +2,4 @@
 
 Repositórios de estudos em Javascript
 
-- Métodos de Arrays http://lfalvespe.github.io/metodos-arrays
+- <a href="metodos-arrays">Métodos de Arrays</a>
