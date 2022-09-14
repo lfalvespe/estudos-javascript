@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: cornflowerblue;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: auto;
+    text-align: center;
+    width: 110px;
+    border-radius: 10px;
+    padding: 3px;
+    background-image: linear-gradient(45deg, rgb(13, 13, 192), rgb(5, 5, 80));
+    color: white;
+}
+
+main {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    width: 80vw;
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    color: rgb(33, 3, 61);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.214);
+}
+
+#metodos {
+    margin-top: 15px;
+    background-color: white;
+    width:90vw;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.456);
+}
+
+#vetor {
+    margin: auto;
+    min-width: 370px;
+    max-width: 550px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color:rgb(200, 232, 200) ;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+li {
+    margin-bottom:10px;
+
+}
+
+li p {
+   margin-top: 10px;
+   padding:5px;
+}
+
+#tela {
+    margin-top: 20px;
+    min-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(154, 148, 148);
+    padding: 30px 10px;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.386);
+}
+
+input {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+input:hover {
+    background-color: lightgray;
+}
+
+footer {
+    background-image: linear-gradient(45deg, rgb(13, 13, 192), rgb(5, 5, 80));
+    margin-top:20px;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.441);
+    line-height: 18px;
+}
