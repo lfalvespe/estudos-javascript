@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+
+        <div class="titulo">
+            <br>
+            <h1>Javascript</h1>
+        </div>
+
+        <div class="logo"><img src="icon-js.gif" alt="" id="logo" width="60"></div>
+
+    </header>
+ 
+    <main>
+
+        <h2>Arrays</h2>
+        <br>
+
+    
+        <section class="metodos">
+
+            <h3><u>Métodos internos</u></h3>
+            <br>
+
+            <ul>
+                <li>
+                <p><strong>. indexOf ( ) - </strong> etorna a posição do elemento:</p>
+                
+                <li>
+                    <p><strong>. sort ( ) -</strong> Ordena o vetor:</p>
+                </li>
+                <li>
+                    <p><strong>. push ( ) - </strong> Adiciona um elemento na última posição:</p>
+                </li>
+                <li>
+                    <p><strong>. unshift ( ) - </strong> Adiciona um elemento na primeira posição:</p>
+                </li>
+                <li>
+                    <p><strong>. pop ( ) - </strong>Remove o último elemento:</P>
+                </li>
+                <li>
+                    <p><strong>. shift ( ) - </strong> Remove o primeiro elemento:</p>
+                </li>
+                <li>
+                    <p><strong>delete V[ n ] - </strong> Deleta o item na posição "n": <br>
+                            (Deixa um valor "Undefined na posição do elemento apagado."</p>
+                </li>
+                <li>
+                    <p>
+                        <strong>. slice ( m, n ) - </strong> Fatia o vetor da posição "m" até a posição "n":
+                    </p>
+                </li>
+                <li>
+                    <p><strong>. splice ( x, p, n ) - </strong> Adiciona o valor "x" na posição "p" e remove os "n" valores restantes: </p>
+                </li>
+                <li>
+                    <p><strong>. concat ( ) - </strong> Concatena 2 vetores:</p>
+                </li>
+            </ul>
+        </section>
+
+        
+          
+        <div class="tela">
+
+            <h3>Vetor de Strings</h3>
+
+            <p class="vetor">
+                <strong>carros = [ </strong>'Onix', 'Sandero', 'Mobi', 'Golf', 'Fiesta', 'Logan', 'Chronos'<strong> ]</strong>
+            </p>
+            <br>
+
+            <h3>Vetor de Números</h3>
+
+            <p class="vetor">
+                <strong>numeros = [ </strong> 25, 18, 40, 100, 2, 33<strong> ]</strong>
+            </p>
+            <br>
+
+
+
+
+            <!------------------------- Display --------------------------->
+            <output id="tela">
+                Visualizar
+            </output>
+            <input type="button" id="btn_reset" value="Resetar" onclick="resetar()">
+            <!------------------------- Display --------------------------->
+        
+            
+
+        </div>
+            
+        <section class="exemplos">
+
+            <h3>Exemplos:</h3>
+            <br>
+
+               <ul>
+                
+                    <li>
+                        <p>
+                            <strong>- carros . <span class="vermelho">indexOf(</span> 'Golf '<span class="vermelho"> ) </span></strong> =>
+                            <input type="button" value="Mostrar" onclick="indice()">
+                        </p>
+                    </li>
+
+                    <li> 
+                        <p>
+                            <strong>- carros . <span class="vermelho">sort( )</span></strong> =>
+                            <input type="button" value="Mostrar" onclick="ordenar()">
+                        </p>
+                </li>
+
+                <li>
+                    <p>
+                        <strong>- carros .<span class="vermelho"> push(</span> 'novo-elemento' <span class="vermelho">)</span></strong> =>
+                        <input type="button" value="Mostrar" onclick="adic_final()">
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <strong>- carros . <span class="vermelho">unshift(</span> 'novo-elemento' <span class="vermelho">)</span></strong> =>
+                        <input type="button" value="Mostrar" onclick="adic_inicio()">
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <strong>carros . <span class="vermelho">pop( )</span></strong> =>
+                        <input type="button" value="Mostrar" onclick="apagar_ultimo()">
+                    </p>
+                </li>
+
+
+                <li>
+                    <p>
+                        <strong>carros . <span class="vermelho">shift( )</span></strong> =>
+                        <input type="button" value="Mostrar" onclick="apagar_primeiro()">
+                    </P>
+                </li>
+
+                <li>
+                    <p>
+                        <strong><span class="vermelho">delete carros[ </span>3<span class="vermelho"> ]</span></strong> =>
+                        <input type="button" value="Mostrar" onclick="deletar()">
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <strong>new_carros = carros . <span class="vermelho">slice(</span>2, 5<span class="vermelho">)</span></strong> =>
+                        <input type="button" value="Mostrar" onclick="fatiar()">
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                         <strong>new_carros = carros . <span class="vermelho">splice( </span>1, 3, 'Spin' <span class="vermelho">)</span></strong> =>
+                         <input type="button" value="Mostrar" onclick="fatiar1()">
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        outros = ["Sentra", "Kwid"] <br>
+                        <strong>new_carros . <span class="vermelho">concat(</span> outros <span class="vermelho">)</span></strong> =>
+                        <input type="button" value="Mostrar" onclick="concatenar()">
+                    </p>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p><em>Criado por</em> <a href="http://github.com/lfalvespe"><strong>Fernando Alves</strong></a> <br><em>lfalvespe@gmail.com</em></p> 
+    </footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
