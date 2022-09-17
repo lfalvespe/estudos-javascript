@@ -66,10 +66,10 @@ h2 {
     width: 200px;
     margin-top: 40px;
     padding: 8px;
-    background-color: white;
+    background-color: rgba(110, 255, 255, 0.136);
     text-align: center;
     font-size: 1.9em;
-    color: rgb(124, 255, 255);
+    color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     text-shadow: 2px 2px 2px rgba(1, 43, 43, 0.564);
     border-radius: 10px;
