@@ -102,7 +102,7 @@ section.strings {
 
 section.strings h3, section.metodos h3, section.numeros h3 {
     color: rgb(1, 43, 43);
-    text-shadow: 1px 1px 1px rgba(62, 212, 212, 0.41);
+    text-shadow: 1px 1px 2px rgba(62, 212, 212, 0.41);
 }
 
 section.numeros {
