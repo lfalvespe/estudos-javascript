@@ -15,6 +15,10 @@ function resetar() {
 	tela.innerHTML = '----------'
 }
 
+function join() {
+	tela.innerHTML = carros.join(' * ')
+}
+
 function indice() {
 	tela.innerHTML = ''
 	tela.innerHTML = `${carros.indexOf('Golf')}`
@@ -79,8 +83,7 @@ function concat() {
 //Vetor Numérico
 
 function indice_num() {
-	tela.innerHTML = ''
-	tela.innerHTML = `${numeros.indexOf(2).join(', ')}`
+	tela.innerHTML = `${numeros.indexOf(2)}`
 }
 
 function ordenar_num() {
