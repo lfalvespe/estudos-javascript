@@ -84,7 +84,7 @@ h3 {
 }
 
 section.metodos, section.strings, section.numeros {
-    width: 85vw;
+    width: 90vw;
     background-color: white;
     border-radius: 10px;
     padding: 0px 30px;
@@ -110,7 +110,7 @@ section.numeros {
 }
 
 div.tela {
-    width: 90vw;
+    width: 94vw;
     margin-top: 10px;
     padding: 10px;
     position: sticky;
