@@ -91,6 +91,10 @@ function ordenar_num() {
 	tela.innerHTML = `[ ${numeros.sort().join(', ')} ]`
 }
 
+function sort() {
+	tela.innerHTML = `[ ${numeros.sort(function(a,b){return a-b})} ]`
+}
+
 function adic_final_num() {
 	numeros.push(51)
 	tela.innerHTML = `[ ${numeros.join(', ')} ]`
