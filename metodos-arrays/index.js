@@ -129,7 +129,7 @@ function fatiar_num() {
 }
 
 function fatiar1_num() {
-	numeros.splice(2, 3, 11)
+	numeros.splice(1, 3, 11)
 	tela.innerHTML = `[ ${numeros.join(', ')} ]`
 }
 
