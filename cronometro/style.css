@@ -78,10 +78,28 @@ input {
 	background-color: #8b30ff;
 }
 
+#iniciar:hover {
+	background-color: #c79dff;
+	color: black;
+	text-shadow: none;
+}
+
 #pausar {
 	background-color: #183b80 ;
 }
 
+#pausar:hover {
+	background-color: #84adff ;
+	color: black;
+	text-shadow: none;
+}
+
 #zerar {
 	background-color: #ff0000 ;
+}
+
+#zerar:hover {
+	background-color: #fdb7b7 ;
+	color: black;
+	text-shadow: none;
 }
