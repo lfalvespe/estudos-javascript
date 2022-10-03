@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Relógio</title>
+
+	<style>
+
+		h1 {
+			text-align: center;
+		}
+
+		h2 {
+			margin-top: 100px;
+			text-align: center;
+		}
+
+		.relogio {
+			margin: auto;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			align-items: center;
+			column-gap: 10px;
+			text-align: center;
+			background-color: aquamarine;
+			width: 250px;
+			height: 80px;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.349);
+			font-size: 1.5em;
+		}
+
+		#hora, #min, #seg {
+			background-color: rgba(0, 0, 0, 0.514);
+			color: rgb(235, 250, 25);
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.445);
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Javascript</h1>
+	</header>
+
+	<h2>Relógio Digital</h2>
+
+	<div class="relogio">
+
+		<span id="hora"></span> : <span id="min"></span> : <span id="seg"></span>
+
+	</div>
+
+	<script>
+
+		hora = document.querySelector('#hora')
+		min = document.querySelector('#min')
+		seg = document.querySelector('#seg')
+
+		setInterval(
+			function(){
+				data = new Date()
+				h = data.getHours()
+				m = data.getMinutes()
+				s = data.getSeconds()
+
+				hora.innerHTML = (h < 10 ? '0' + h : h)
+				min.innerHTML = (m < 10 ? '0'+ m : m)
+				
+				seg.innerHTML = (s < 10 ? '0' + s : s)
+			}
+		)
+
+	</script>
+	
+</body>
+</html>
