@@ -1,60 +1,50 @@
 import {Pessoa} from "./Pessoa.js";
 
-class Aluno extends Pessoa {
-    _serie
-    _turma
-    static totTurma
+import {Aluno} from "./Aluno.js";
 
-    constructor(nome, sexo, idade, peso, altura, serie, turma) {
-        super(nome, sexo, idade, peso, altura);
-        this._serie = serie;
-        this._turma = turma;
-    }
-
-    get serie() {
-        return this._serie;
-    }
-    set serie(novaSerie) {
-        this._serie = novaSerie;
-    }
-
-    get turma() {
-        return this._turma;
-    }
-    set turma(novaTurma) {
-        this._turma = novaTurma;
-    }
-
-    apresentar() {
-        console.log(`Olá, meu nome é ${this._nome}, sou do sexo ${this._sexo}, tenho ${this._idade} anos, meu peso é ${this._peso}kg e minha altura é ${this._altura}m. Estudo na turma ${this._turma} da ${this._serie}a série.`)
-    }
-    
-}
+import {Trabalhador} from "./Trabalhador.js";
 
 //criando objetos da classe Pessoa:
-p1 = new Pessoa('Maria', 'F', 25, 70.2, 1.74);
+const p1 = new Pessoa('Maria', 'F', 25, 70.2, 1.74);
 console.log(p1)
 
 p1.apresentar();
 
-p2 = new Pessoa('José', 'M', 52, 87.3, 1.86 )
+const p2 = new Pessoa('José', 'M', 52, 87.3, 1.86 )
 console.log(p2)
 
 p2.apresentar();
 
-//Lendo a propriedade de classe totPessoas:
+
+//Lendo a propriedade totPessoas da classe Pessoa:
 console.log(Pessoa.totPessoas);
 
 
 //Criando objetos da classe Aluno:
-a1 = new Aluno('Toinho', 'M', 14, 64.2, 1.71, 7, 'A');
+const a1 = new Aluno('Toinho', 'M', 14, 64.2, 1.71, 7, 'A');
 console.log(a1);
 
-a2 = new Aluno('Zefinha', 'F', 12, 59.8, 1.55, 8, 'C');
+const a2 = new Aluno('Zefinha', 'F', 12, 59.8, 1.55, 8, 'C');
 console.log(a2);
 
 a1.apresentar();
 a2.apresentar();
+
+//Criando objetos da classe Trabalhador:
+
+const t1 = new Trabalhador('Jurema', 'F', 44, 86.5, 1.88, 'Professora', true);
+console.log(t1);
+
+const t2 = new Trabalhador('Aroldo', 'M', 54, 92.6, 1.92, 'Engenheiro', false );
+console.log(t2)
+
+t1.apresentar();
+t2.apresentar();
+
+console.log(Trabalhador.totTrabalhadores);
+
+
+//Exibindo a situação do IMC de cada objeto executando o método classificaIMC para cada um deles.
 
 const saudeP1 = p1.classificaIMC()
 const saudeP2 = p2.classificaIMC()

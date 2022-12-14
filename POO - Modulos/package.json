@@ -1,0 +1,12 @@
+{
+  "name": "calculadora-imc",
+  "version": "1.0.0",
+  "description": "Calculadora de IMC",
+  "main": "script.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Fernando Alves",
+  "license": "ISC",
+  "type": "module"
+}
